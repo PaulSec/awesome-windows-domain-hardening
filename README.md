@@ -2,7 +2,7 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/PaulSec/awesome-sec-talks)
 
-A curated list of awesome Security Hardening techniques
+A curated list of awesome Security Hardening techniques for Windows.
 
 ## Maintainers
 [gepeto42](https://twitter.com/gepeto42)
