@@ -1,13 +1,8 @@
-### Awesome Windows Domain Hardening
-
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/PaulSec/awesome-sec-talks)
+# Awesome Windows Domain Hardening [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/PaulSec/Windows-domain-hardening)
 
 A curated list of awesome Security Hardening techniques for Windows.
 
-## Maintainers
-[gepeto42](https://twitter.com/gepeto42)
-
-[PaulWebSec](https://twitter.com/PaulWebSec)
+Create by [gepeto42](https://twitter.com/gepeto42) and [PaulWebSec](https://twitter.com/PaulWebSec) but highly inspired by [PyroTek3](https://twitter.com/PyroTek3)
 
 
 ### Summary
