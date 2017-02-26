@@ -6,6 +6,7 @@ A curated list of awesome Security Hardening techniques for Windows.
 
 ## Maintainers
 [gepeto42](https://twitter.com/gepeto42)
+
 [PaulWebSec](https://twitter.com/PaulWebSec)
 
 
