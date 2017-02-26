@@ -1,3 +1,14 @@
+### Awesome Windows Domain Hardening
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/PaulSec/awesome-sec-talks)
+
+A curated list of awesome Security Hardening techniques
+
+## Maintainers
+[gepeto42](https://twitter.com/gepeto42)
+[PaulWebSec](https://twitter.com/PaulWebSec)
+
+
 ### Summary
 
 This document summarizes the information related to Pyrotek and Harmj0y's DerbyCon talk called "111 Attacking EvilCorp Anatomy of a Corporate Hack". Video and slides are available below. 
