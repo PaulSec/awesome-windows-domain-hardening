@@ -2,7 +2,7 @@
 
 A curated list of awesome Security Hardening techniques for Windows.
 
-Create by [gepeto42](https://twitter.com/gepeto42) and [PaulWebSec](https://twitter.com/PaulWebSec) but highly inspired by [PyroTek3](https://twitter.com/PyroTek3)
+Created by [gepeto42](https://twitter.com/gepeto42) and [PaulWebSec](https://twitter.com/PaulWebSec) but highly inspired from [PyroTek3](https://twitter.com/PyroTek3) research!
 
 
 ### Summary
