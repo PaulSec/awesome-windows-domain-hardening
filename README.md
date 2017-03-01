@@ -9,16 +9,19 @@ Created by [gepeto42](https://twitter.com/gepeto42) and [PaulWebSec](https://twi
 
 This document summarizes the information related to Pyrotek and Harmj0y's DerbyCon talk called "111 Attacking EvilCorp Anatomy of a Corporate Hack". Video and slides are available below. 
 
+It also incorporates hardening techniques necessary to prevent other attacks, including techniques discussed by [gepeto42](https://twitter.com/gepeto42) and [joeynoname](https://twitter.com/joeynoname) during their [THOTCON 0x7 talk](https://evil.plumbing/).
+
 Something's missing? Create a Pull Request and add it.
 
 ### Initial foothold
 
-- Deploy [EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit) to Workstations (End of line in July 2018)
+- No hardening effort should come at the expense of upgrading operating systems.
+- Deploy [EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit) to Workstations (End of line in July 2018 - Consider keeping EMET for Windows 7 but prioritize upgrades to Windows 10 and Edge). 
 - Use [AppLocker](https://technet.microsoft.com/fr-fr/library/dd759117(v=ws.11).aspx) to block exec content from running in user locations (home dir, profile path, temp, etc).
 - Manage PowerShell execution via Applocker or constrained language mode.
 - Enable [PowerShell logging](https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html) (v3+) & command process logging.
-- [Block Office macros](https://blogs.technet.microsoft.com/mmpc/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/) (Windows & Mac) where possible.
-- Deploy security tooling that monitors for suspicious behavior
+- [Block Office macros](https://blogs.technet.microsoft.com/mmpc/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/) (Windows & Mac) on content downloaded from the Internet.
+- Deploy security tooling that monitors for suspicious behavior. Consider using [WEF](https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/) to forward only interesting events to your SIEM or logging system.
 - Limit capability by blocking/restricting attachments via email/download:
 	-  Executables extensions:
 	-  (ade, adp, ani, bas, bat, chm, cmd, com, cpl,
@@ -36,22 +39,26 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - Increase security on sensitive [GPO](https://msdn.microsoft.com/en-us/library/bb742376.aspx)s.
 -  Evaluate deployment of behavior analytics [(Microsoft ATA)](https://www.microsoft.com/fr-fr/cloud-platform/advanced-threat-analytics).
 
-### Lateral movement
+### Lateral Movement
 
 -  Configure GPO to prevent local accounts from network authentication [(KB2871997)](https://support.microsoft.com/fr-fr/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13,-2014).
 - Ensure local administrator account passwords are automatically changed [(Microsoft LAPS)](https://www.microsoft.com/en-us/download/details.aspx?id=46899) & remove extra local admin accounts.
 - Limit workstation to workstation communication [(Windows Firewall)](https://technet.microsoft.com/en-us/network/bb545423.aspx).
+  - Test psexec with good credentials between two workstations. If it works, you have a lateral movement problem.
 
-### Privilege escalation
+### Privilege Escalation
 
 - Remove files with passwords in SYSVOL [(including GPP)](https://adsecurity.org/?p=2288).
-- Ensure admins don’t log onto untrusted systems (regular workstations).
-- Use Managed Service Accounts for SAs or ensure SA passwords are >25 characters [(FGPP)](https://technet.microsoft.com/en-us/library/cc770842%28v=ws.10%29.aspx)
+- Ensure admins don’t log onto untrusted systems (regular workstations) by configuring **DENY** user right assignments with GPOs.
+- Provide Privileged Access Workstations or [PAWs](https://technet.microsoft.com/en-us/windows-server-docs/security/securing-privileged-access/privileged-access-workstations) for all highly privileged work. Those should never have access to the Internet.
+- Use Managed Service Accounts for SAs when possible [(FGPP)](https://technet.microsoft.com/en-us/library/cc770842%28v=ws.10%29.aspx)
+- For systems that do not support Managed Service Accounts, deploy a [Fine-Grained Password Policy](https://technet.microsoft.com/en-us/library/cc770842(v=ws.10).aspx) to ensure the passwords are >32 characters.
 - Ensure all computers are talking NTLMv2 & Kerberos, deny [LM/NTLMv1](https://support.microsoft.com/en-us/help/2793313/security-guidance-for-ntlmv1-and-lm-network-authentication).
 
 ### Protect Administration Credentials
  
-- Ensure all admins only log onto approved admin workstations & servers.
+- Ensure all admins only log onto approved admin workstations & servers. (See PAW in Privilege Escalation section)
+- Ensure all built-in groups but Administrator are denied from logging on to Domain Controllers user User Right Assignments. By default, Backup operators, Account operators can login to Domain Controllers, which is dangerous.
 - Add all admin accounts to [Protected Users group](https://technet.microsoft.com/en-us/library/dn466518%28v=ws.11%29.aspx) (requires Windows 2012 R2 DCs).
 - Admin workstations & servers:
 	- Control & limit access to admin workstations & servers.
@@ -68,6 +75,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - Windows 10, remove:
 	- SMB 1.0/CIFS
 	- Windows PowerShell 2.0
+- Use [shims](https://technet.microsoft.com/en-ca/library/dd837644(v=ws.10).aspx) to enable old applications that require admin privileges to work by believing they have them.
  
 ### Tools
 
@@ -89,11 +97,13 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - [Red vs Blue: Modern Active Directory Attacks & Defense](https://www.youtube.com/watch?v=rknpKIxT7NM)
 - [Offensive Active Directory with Powershell](https://www.youtube.com/watch?v=cXWtu-qalSs)
 - [Advanced Incident Detection and Threat Hunting using Sysmon and Splunk](https://www.youtube.com/watch?v=vv_VXntQTpE)
+- [Real Solutions From Real Incidents: Save Money and Your Job!](https://www.youtube.com/watch?v=313J20uPbcw)
 
 ### Slides
 
 - [How to go from Responding to Hunting with Sysinternals Sysmon](https://onedrive.live.com/view.aspx?resid=D026B4699190F1E6!2843&ithint=file%2cpptx&app=PowerPoint&authkey=!AMvCRTKB_V1J5ow)
 - [111 Attacking EvilCorp Anatomy of a Corporate Hack](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Presented.pdf)
+- [Real Solutions From Real Incidents: Save Money and Your Job!](https://evil.plumbing/Current-version-June.pdf)
 
 ### Additional resources
 
