@@ -89,6 +89,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - [UACME](https://github.com/hfiref0x/UACME) - Defeating Windows User Account Control
 - [Windows System Internals](https://technet.microsoft.com/en-us/sysinternals/bb545021.aspx) - (Including Sysmon etc.)
 - [Hardentools](https://github.com/securitywithoutborders/hardentools) - Collection of simple utilities designed to disable a number of "features" exposed by Windows
+- [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - A swiss army knife for pentesting Windows/Active Directory environments
 
 ### Videos
 
