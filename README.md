@@ -17,7 +17,7 @@ Something's missing? Create a Pull Request and add it.
 
 - No hardening effort should come at the expense of upgrading operating systems.
 - Deploy [EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit) to Workstations (End of line in July 2018 - Consider keeping EMET for Windows 7 but prioritize upgrades to Windows 10 and Edge). 
-- Use [AppLocker](https://technet.microsoft.com/fr-fr/library/dd759117(v=ws.11).aspx) to block exec content from running in user locations (home dir, profile path, temp, etc).
+- Use [AppLocker](https://technet.microsoft.com/en-us/library/dd759117(v=ws.11).aspx) to block exec content from running in user locations (home dir, profile path, temp, etc).
 - Manage PowerShell execution via Applocker or constrained language mode.
 - Enable [PowerShell logging](https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html) (v3+) & command process logging.
 - [Block Office macros](https://blogs.technet.microsoft.com/mmpc/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/) (Windows & Mac) on content downloaded from the Internet.
