@@ -17,7 +17,7 @@ Something's missing? Create a Pull Request and add it.
 
 - No hardening effort should come at the expense of upgrading operating systems.
 - Deploy [EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit) to Workstations (End of line in July 2018 - Consider keeping EMET for Windows 7 but prioritize upgrades to Windows 10 and Edge). 
-- Use [AppLocker](https://technet.microsoft.com/fr-fr/library/dd759117(v=ws.11).aspx) to block exec content from running in user locations (home dir, profile path, temp, etc).
+- Use [AppLocker](https://technet.microsoft.com/en-us/library/dd759117(v=ws.11).aspx) to block exec content from running in user locations (home dir, profile path, temp, etc).
 - Manage PowerShell execution via Applocker or constrained language mode.
 - Enable [PowerShell logging](https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html) (v3+) & command process logging.
 - [Block Office macros](https://blogs.technet.microsoft.com/mmpc/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/) (Windows & Mac) on content downloaded from the Internet.
@@ -37,11 +37,11 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - Deploy Windows 10 and limit local group enumeration.
 - Limit workstation to workstation communication.
 - Increase security on sensitive [GPO](https://msdn.microsoft.com/en-us/library/bb742376.aspx)s.
--  Evaluate deployment of behavior analytics [(Microsoft ATA)](https://www.microsoft.com/fr-fr/cloud-platform/advanced-threat-analytics).
+-  Evaluate deployment of behavior analytics [(Microsoft ATA)](https://www.microsoft.com/en-us/cloud-platform/advanced-threat-analytics).
 
 ### Lateral Movement
 
--  Configure GPO to prevent local accounts from network authentication [(KB2871997)](https://support.microsoft.com/fr-fr/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13,-2014).
+-  Configure GPO to prevent local accounts from network authentication [(KB2871997)](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13,-2014).
 - Ensure local administrator account passwords are automatically changed [(Microsoft LAPS)](https://www.microsoft.com/en-us/download/details.aspx?id=46899) & remove extra local admin accounts.
 - Limit workstation to workstation communication [(Windows Firewall)](https://technet.microsoft.com/en-us/network/bb545423.aspx).
   - Test psexec with good credentials between two workstations. If it works, you have a lateral movement problem.
