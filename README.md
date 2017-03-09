@@ -81,6 +81,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 
 - [Responder](https://github.com/lgandx/Responder) - A LLMNR, NBT-NS and MDNS poisoner
 - [BloodHound](https://github.com/BloodHoundAD/BloodHound) - Six Degrees of Domain Admin
+- [AD Control Path](https://github.com/ANSSI-FR/AD-control-paths) - Active Directory Control Paths auditing and graphing tools  
 - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit/) - A PowerShell Post-Exploitation Framework
 - [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon) - Situational Awareness PowerShell framework
 - [Empire](https://github.com/EmpireProject/Empire) - PowerShell and Python post-exploitation agent
