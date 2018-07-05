@@ -31,6 +31,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 	- Office files that support macros (docm, xlsm, pptm, etc.)
 -  Change default program for anything that opens with Windows scripting to notepad (test first!)
 	- bat, js, jse, vbe, vbs, wsf, wsh, etc.
+- [Preventing activation of OLE packages](https://cloudblogs.microsoft.com/microsoftsecure/2016/06/14/wheres-the-macro-malware-author-are-now-using-ole-embedding-to-deliver-malicious-files/?source=mmpc) in Office with the PackagerPrompt registry setting
 
 ### Reconnaissance
 
