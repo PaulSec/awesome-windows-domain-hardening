@@ -115,5 +115,5 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - [ADSecurity](https://adsecurity.org/)
 - [Harmj0y's blog](http://blog.harmj0y.net/)
 - [Sysmon SecuriTay's configuration file](https://github.com/SwiftOnSecurity/sysmon-config) - template with default high-quality event tracing
-- [Explaining and adapting Tay’s Sysmon configuration](https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8#.mi0rmwn1v)
+- [Explaining and adapting Tay’s Sysmon configuration](https://web.archive.org/web/20170531120041/https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8) and [here](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
 - [Use of PSExec](https://www.toshellandback.com/2017/02/11/psexec/)
