@@ -68,6 +68,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
  
 ### Strengthen/Remove Legacy
 
+- **Start now by using [PingCastle](https://www.pingcastle.com/) which performs incredible AD audit**
 - Audit/Restrict NTLM.
 - Enforce [LDAP signing](https://technet.microsoft.com/en-us/library/dd941832%28v=ws.10%29.aspx).
 - Enable [SMB signing](https://blogs.technet.microsoft.com/josebda/2010/12/01/the-basics-of-smb-signing-covering-both-smb1-and-smb2/) (& encryption where poss.).
@@ -79,6 +80,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
  
 ### Tools
 
+- [PingCastle](https://www.pingcastle.com/) - an Active Directory audit tool (and free!) with pretty good metrics.
 - [Responder](https://github.com/lgandx/Responder) - A LLMNR, NBT-NS and MDNS poisoner
 - [BloodHound](https://github.com/BloodHoundAD/BloodHound) - Six Degrees of Domain Admin
 - [AD Control Path](https://github.com/ANSSI-FR/AD-control-paths) - Active Directory Control Paths auditing and graphing tools  
