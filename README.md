@@ -98,6 +98,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 
 ### Videos
 
+- [Beyond the Mcse: Active Directory for the Security Professional](https://www.youtube.com/watch?v=2w1cesS7pGY)
 - [BSides DC 2016 - PowerShell Security: Defending the Enterprise from the Latest Attack Platform](https://www.youtube.com/watch?v=_8yBjg7bRLo&feature=youtu.be&t=106)
 - [Six Degrees of Domain Admin... - Andy Robbins, Will Schroeder, Rohan Vazarkar](https://www.youtube.com/watch?v=lxd2rerVsLo)
 - [111 Attacking EvilCorp Anatomy of a Corporate Hack](https://www.youtube.com/watch?v=nJSMJyRNvlM&feature=youtu.be&t=16)
