@@ -44,6 +44,9 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 ### Lateral Movement
 
 -  Configure GPO to prevent local accounts from network authentication [(KB2871997)](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13,-2014).
+In addition to this KB, [Countercept article](https://www.countercept.com/our-thinking/notpetya-ransomware-frequently-asked-questions/) is recommending two other changes in the registry: 
+1. Set ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\TokenLeakDetectDelaySecs``` = 30. This will clear credentials of logged off users after 30 seconds (mimicking the behavior of Windows 8.1+) 
+2. Set ```HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\WDigest\UseLogonCredential``` = 0. This will prevent Wdigest credentials being stored in memory, again as is the default for Windows 8.1+. 
 - Ensure local administrator account passwords are automatically changed [(Microsoft LAPS)](https://www.microsoft.com/en-us/download/details.aspx?id=46899) & remove extra local admin accounts.
 - Limit workstation to workstation communication [(Windows Firewall)](https://technet.microsoft.com/en-us/network/bb545423.aspx).
   - Test psexec with good credentials between two workstations. If it works, you have a lateral movement problem.
