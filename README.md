@@ -123,3 +123,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Sysmon SecuriTay's configuration file](https://github.com/SwiftOnSecurity/sysmon-config) - template with default high-quality event tracing
 - [Explaining and adapting Tay’s Sysmon configuration](https://web.archive.org/web/20170531120041/https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8) and [here](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
 - [Use of PSExec](https://www.toshellandback.com/2017/02/11/psexec/)
+- [Preventing Mimikatz attacks](https://medium.com/blue-team/preventing-mimikatz-attacks-ed283e7ebdd5)
