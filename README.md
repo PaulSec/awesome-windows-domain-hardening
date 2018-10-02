@@ -99,6 +99,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Windows System Internals](https://technet.microsoft.com/en-us/sysinternals/bb545021.aspx) - (Including Sysmon etc.)
 - [Hardentools](https://github.com/securitywithoutborders/hardentools) - Collection of simple utilities designed to disable a number of "features" exposed by Windows
 - [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - A swiss army knife for pentesting Windows/Active Directory environments
+- [SharpSploit](https://github.com/cobbr/SharpSploit)
 
 ### Videos
 
@@ -128,3 +129,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Use of PSExec](https://www.toshellandback.com/2017/02/11/psexec/)
 - [Preventing Mimikatz attacks](https://medium.com/blue-team/preventing-mimikatz-attacks-ed283e7ebdd5)
 - [Useful list of Windows Security Log Events](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx)
+- [Introducing SharpSploit: A C# Post-Exploitation Library](https://posts.specterops.io/introducing-sharpsploit-a-c-post-exploitation-library-5c7be5f16c51)
