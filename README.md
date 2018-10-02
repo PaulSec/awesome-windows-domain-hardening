@@ -51,6 +51,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - Limit workstation to workstation communication [(Windows Firewall)](https://technet.microsoft.com/en-us/network/bb545423.aspx).
   - Test psexec with good credentials between two workstations. If it works, you have a lateral movement problem.
 
+
 ### Privilege Escalation
 
 - Remove files with passwords in SYSVOL [(including GPP)](https://adsecurity.org/?p=2288).
@@ -126,3 +127,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Explaining and adapting Tay’s Sysmon configuration](https://web.archive.org/web/20170531120041/https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8) and [here](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
 - [Use of PSExec](https://www.toshellandback.com/2017/02/11/psexec/)
 - [Preventing Mimikatz attacks](https://medium.com/blue-team/preventing-mimikatz-attacks-ed283e7ebdd5)
+- [Useful list of Windows Security Log Events](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx)
