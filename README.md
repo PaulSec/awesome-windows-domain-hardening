@@ -100,6 +100,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Hardentools](https://github.com/securitywithoutborders/hardentools) - Collection of simple utilities designed to disable a number of "features" exposed by Windows
 - [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - A swiss army knife for pentesting Windows/Active Directory environments
 - [SharpSploit](https://github.com/cobbr/SharpSploit)
+- [Rubeus](https://github.com/GhostPack/Rubeus/) - Rubeus is a C# toolset for raw Kerberos interaction and abuses
 
 ### Videos
 
@@ -130,3 +131,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Preventing Mimikatz attacks](https://medium.com/blue-team/preventing-mimikatz-attacks-ed283e7ebdd5)
 - [Useful list of Windows Security Log Events](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx)
 - [Introducing SharpSploit: A C# Post-Exploitation Library](https://posts.specterops.io/introducing-sharpsploit-a-c-post-exploitation-library-5c7be5f16c51)
+- [From Kekeo to Rubeus](http://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
