@@ -112,6 +112,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Offensive Active Directory with Powershell](https://www.youtube.com/watch?v=cXWtu-qalSs)
 - [Advanced Incident Detection and Threat Hunting using Sysmon and Splunk](https://www.youtube.com/watch?v=vv_VXntQTpE)
 - [Real Solutions From Real Incidents: Save Money and Your Job!](https://www.youtube.com/watch?v=313J20uPbcw)
+- [AppLocker Bypass Techniques](https://www.youtube.com/watch?v=z04NXAkhI4k)
 
 ### Slides
 
