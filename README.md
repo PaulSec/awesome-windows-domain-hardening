@@ -101,6 +101,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - A swiss army knife for pentesting Windows/Active Directory environments
 - [SharpSploit](https://github.com/cobbr/SharpSploit)
 - [Rubeus](https://github.com/GhostPack/Rubeus/) - Rubeus is a C# toolset for raw Kerberos interaction and abuses
+- [Koadic](https://github.com/zerosum0x0/koadic) - Koadic, or COM Command & Control, is a Windows post-exploitation rootkit
 
 ### Videos
 
