@@ -133,3 +133,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Useful list of Windows Security Log Events](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx)
 - [Introducing SharpSploit: A C# Post-Exploitation Library](https://posts.specterops.io/introducing-sharpsploit-a-c-post-exploitation-library-5c7be5f16c51)
 - [From Kekeo to Rubeus](http://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
+- [https://movaxbx.ru/2018/10/22/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/amp/](Windows oneliners to download remote payload and execute arbitrary code)
