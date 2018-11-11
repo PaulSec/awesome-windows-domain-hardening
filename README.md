@@ -136,3 +136,4 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [Introducing SharpSploit: A C# Post-Exploitation Library](https://posts.specterops.io/introducing-sharpsploit-a-c-post-exploitation-library-5c7be5f16c51)
 - [From Kekeo to Rubeus](http://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
 - [Windows oneliners to download remote payload and execute arbitrary code](https://movaxbx.ru/2018/10/22/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/amp/)
+- [Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings.](https://github.com/nsacyber/Windows-Secure-Host-Baseline)
