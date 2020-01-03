@@ -41,6 +41,10 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - Increase security on sensitive [GPO](https://msdn.microsoft.com/en-us/library/bb742376.aspx)s.
 -  Evaluate deployment of behavior analytics [(Microsoft ATA)](https://www.microsoft.com/en-us/cloud-platform/advanced-threat-analytics).
 
+BloodHound "prevention":
+- Use [NetCease](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)  to prevent unprivileged session enumeration.
+- Use [Samri10](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)  to prevent unprivileged local admin collection (this fix already exists in Windows 10 1607 and above).
+
 ### Lateral Movement
 
 -  Configure GPO to prevent local accounts from network authentication [(KB2871997)](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-and-management-may-13,-2014).
