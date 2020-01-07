@@ -30,8 +30,15 @@ crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb,
 mde, mdz, msc, msi, msp, mst, pcd, pif, reg, scr, sct, shs,
 url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 	- Office files that support macros (docm, xlsm, pptm, etc.)
+	-  Ensure [these file types](https://support.office.com/en-us/article/blocked-attachments-in-outlook-434752e1-02d3-4e90-9124-8b81e49a8519) are blocked.
+	-  Block forgotten/unused [Excel file extensions](https://www.vmray.com/cyber-security-blog/forgotten-ms-office-features-used-deliver-malware/): IQY, SLK
 -  Change default program for anything that opens with Windows scripting to notepad (test first!)
-	- bat, js, jse, vbe, vbs, wsf, wsh, etc.
+	- bat, js, jse, vbe, vbs, wsf, wsh, hta, vbs, etc.
+	-  GPO: User Configuration -> Preferences -> Control Panel Settings -> Folder Options -> Open With
+	-  Action: Replace
+	-  File Extension: (extension)
+	-  Associated Program: %windir%\system32\notepad.exe
+	-  Set as default: Enabled.
 - [Preventing activation of OLE packages](https://cloudblogs.microsoft.com/microsoftsecure/2016/06/14/wheres-the-macro-malware-author-are-now-using-ole-embedding-to-deliver-malicious-files/?source=mmpc) in Office with the PackagerPrompt registry setting
 
 ### Reconnaissance
