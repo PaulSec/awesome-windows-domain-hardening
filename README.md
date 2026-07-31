@@ -95,6 +95,7 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 	- Windows PowerShell 2.0
 - Use [shims](https://technet.microsoft.com/en-ca/library/dd837644(v=ws.10).aspx) to enable old applications that require admin privileges to work by believing they have them.
  
+[Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform that audits Windows domains by executing real Active Directory attack paths (via NetExec/BloodHound) to validate hardening, self-hosted with proof of exploitation.
 ### Tools
 
 - [PingCastle](https://www.pingcastle.com/) - an Active Directory audit tool (and free!) with pretty good metrics.
