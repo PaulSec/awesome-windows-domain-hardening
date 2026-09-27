@@ -148,3 +148,6 @@ In addition to this KB, [Countercept article](https://www.countercept.com/our-th
 - [From Kekeo to Rubeus](http://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
 - [Windows oneliners to download remote payload and execute arbitrary code](https://movaxbx.ru/2018/10/22/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/amp/)
 - [Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings.](https://github.com/nsacyber/Windows-Secure-Host-Baseline)
+
+
+- [ProxSuite PRO](https://github.com/prox0959/ProxSuite-PRO) - 25-in-1 native x64 Windows live memory forensics (Module Stomping, Process Ghosting, NTDLL syscall unhooking), LSASS SSP audit, C2 Named Pipe scanner, and DFIR triage suite.
